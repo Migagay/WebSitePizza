@@ -5,6 +5,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+	background-color: #a58eca;
 }
 /*----------------Estilos Base------------------*/
 img{
@@ -37,13 +38,13 @@ h1,h2,h3,h4,h5{
 }
 .logo{
     font-size: 1.9em;
-    color: #de423a;
+    color: #bc4cc4;
     padding: 10px;
     font-family: 'Sacramento', cursive;
         
 }
 .main-header__contactInfo__phone{
-    background:#de423a;
+    background:#a55ccf;
     color: #fff;
     padding: 10px;
     margin: 0;
@@ -68,7 +69,7 @@ h1,h2,h3,h4,h5{
 
 .icon-menu{
     display: block;
-    color: #fff;
+    color: #0a0707;
     border: 1px solid #fff;
     border-radius: 3px;
     width: 40px;
@@ -87,7 +88,7 @@ h1,h2,h3,h4,h5{
 }
 
 .social-icon [class*="icon-"]{
-    color: black;
+    color: rgb(255, 255, 255);
     margin-left: 10px;
     display: flex;
     justify-content: center;
@@ -95,7 +96,7 @@ h1,h2,h3,h4,h5{
     font-size: 1.3em;
     width: 35px;
     height: 35px;
-    background: #fff;
+    background: #430c68;
     border-radius: 50%;
 }
 
@@ -110,7 +111,7 @@ h1,h2,h3,h4,h5{
     top: 75px;
     left: 0;
     width: 100%;
-    background: rgba(0,0,0,.85);
+    background: rgba(0, 0, 1, 0.85);
     padding:0px;
     margin:0px;
     z-index: 2000px;
@@ -131,10 +132,10 @@ h1,h2,h3,h4,h5{
     
 }
 .menu__link:hover{
-     background-color: #DE423A;
+     background-color: #ca73d2;
 }
 .menu__link--select{
-    background-color: #DE423A;
+    background-color: #320b4d;
     
 }
 .mostrar{
@@ -162,7 +163,7 @@ h1,h2,h3,h4,h5{
 }
 .banner__content {
     width: 70%;
-    color: white;
+    color: rgb(233, 229, 237);
     text-align:center;
     position: absolute;
     z-index: 1500;
@@ -176,7 +177,7 @@ h1,h2,h3,h4,h5{
 
 /*----------------Estilos Principales------------------*/
 .group--color .container{
-	background-color: #DE423A;
+	background-color: #8236a5c8;
 	padding: 10px;
 	text-align: center;
 	
@@ -185,13 +186,16 @@ h1,h2,h3,h4,h5{
 	margin: 15px 0;
 	font-size: 2.8em;
 	font-family: 'Sacramento',cursive;
+	color: #f0f0f1;
 	
 }
 .column__title{
 	font-size: 1.3em;
+	color: #040009;
+	
 }
 .main__about_description .column:nth-child(2){
-	padding: 10px;
+	padding: 2px;
 }
 .btn{
 	
@@ -199,8 +203,8 @@ h1,h2,h3,h4,h5{
 	text-align: center;
 	text-decoration: none;
 	width: 120px;
-	background: #DE423A;
-	color: #fff;
+	background: #53185be0;
+	color: #e4e0ed;
 	padding:10px;
 	margin: 10px auto;
 	
@@ -213,31 +217,34 @@ h1,h2,h3,h4,h5{
 	margin: 30px;
 }
 
-.today-special .column {
-	margin-bottom: 30px;
+.pokemon-psiquico .column {
+	margin-bottom: 10px;
 	text-align: center;
 }
 
-.today-special__img{
+.pokemon-psiquico__img{
 	margin: auto;
 	max-width: 350px;
 }
 
-.today-special__tittle{
+.pokemon-psiquico__tittle{
 	
-	font-size: 1.3em;
+	font-size: 1.5em;
 	padding-top: 10px;
 	padding-bottom: 20px;
+	color: #080310;
+	
 }
-.today-special__price{
-	font-size: 1.5em;
-	color: #DE423a;
+.pokemon-psiquico__info{
+	font-size:1.2em;
+	color: #2e094d;
 	font-weight: bold;
+	font-family:'Sacramento',cursive;
 }
 
 /*----------------Estilos Principales------------------*/
 .main-footer{
-	background: #222;
+	background: #472c5a;
 	color: #fff;
 	padding: 10px;
 	padding-top: 20px;
@@ -267,7 +274,7 @@ h1,h2,h3,h4,h5{
 
 @media screen and (min-width:480px){
 	.logo{
-		color: #fff;
+		color: #ffffff;
 		
 	}
 	.main-header__contactInfo{
@@ -307,11 +314,11 @@ h1,h2,h3,h4,h5{
 	.main__about_description .btn{
 		margin: 0;
 	}
-	.today-special .column {
-		border: 5px solid #ddd;
+	.pokemon-psiquico .column {
+		border: 5px solid #4c1256;
 		padding: 5px;
 	}
-	.today-special__img{
+	.pokemon-psiquico__img{
 		height: 200px;
 		object-fit: cover;
 	}
@@ -369,16 +376,22 @@ h1,h2,h3,h4,h5{
 	.group--color .container{
 		margin-top: 30px;
 		margin-bottom: 30px;
-		padding: 20px
+		padding: 20px;
+		background-color: #481671;
+		color: #e3dfe7;
 	
 	}
 	.main__title{
 		font-size: 2.5em;
+		
+	};
 	}
 	.main__about_description .column--50:nth-child(2) .column__txt
 	{
-		line-height: 55px;
+		line-height: 30px;
 		text-align: justify;
+		font-weight: bold;
+		
 		
 	}
 	.group__title{
@@ -387,16 +400,16 @@ h1,h2,h3,h4,h5{
 	.column--50--25{
 		width: 24.5%;
 	}
-	.today-special__tittle{
+	.pokemon-psiquico__tittle{
 	
 		font-size: 1.9em;
 		
 	}
-	.today-special__price{
+	.pokemon-psiquico__price{
 	font-size: 2.2em;
 	
 	}
-}
+
 
 
 
