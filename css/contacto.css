@@ -1,12 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Sacramento&display=swap');
+.form-container{
+    width: 800px;
+    margin: 0 auto;
+    padding:20px;
+    background-color: #e3bb98;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    
+}
+
+.form-control{
+    margin-bottom: 20px;
+}
+
+.main-footer{
+    margin-top: 20px;
+}
+.menu__link:hover{
+    color:white;
+}
+
+.map {
+
+    display: flex;
+    justify-content: center;
+}
+
+.map div{
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.map div h1{
+    margin-bottom: 10px;
+    color: #dbc58a;
+}
+iframe{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .form-container {
+        margin-top:20px;
+        width: 100%; /* Ancho ajustado para pantallas pequeñas */
+    }
+}
+
+
+
+@media screen and (max-width:1024px) {
+
+    .form-container{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .main-footer{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        text-decoration: row;
+    }
+}
+
 *{
     box-sizing: border-box;
 }
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    background-color: #859dd1;
-    
+	background-color: #a58eca;
 }
 /*----------------Estilos Base------------------*/
 img{
@@ -39,14 +104,13 @@ h1,h2,h3,h4,h5{
 }
 .logo{
     font-size: 1.9em;
-    color: #4c587b;
+    color: #bc4cc4;
     padding: 10px;
     font-family: 'Sacramento', cursive;
-	font-weight: bold;
         
 }
 .main-header__contactInfo__phone{
-    background:#464a80;
+    background:#a55ccf;
     color: #fff;
     padding: 10px;
     margin: 0;
@@ -64,14 +128,14 @@ h1,h2,h3,h4,h5{
 /*----------------Estilos Menu------------------*/
 .main_nav{
     width: 100%;
-    position:top;
+    position:relative;
     z-index: 2000;  
     padding: 10px;
 }
 
 .icon-menu{
     display: block;
-    color: #040404fc;
+    color: #0a0707;
     border: 1px solid #fff;
     border-radius: 3px;
     width: 40px;
@@ -98,7 +162,7 @@ h1,h2,h3,h4,h5{
     font-size: 1.3em;
     width: 35px;
     height: 35px;
-    background: #937abd;
+    background: #430c68;
     border-radius: 50%;
 }
 
@@ -113,7 +177,7 @@ h1,h2,h3,h4,h5{
     top: 75px;
     left: 0;
     width: 100%;
-    background: rgba(2, 1, 2, 0.85);
+    background: rgba(0, 0, 1, 0.85);
     padding:0px;
     margin:0px;
     z-index: 2000px;
@@ -134,46 +198,54 @@ h1,h2,h3,h4,h5{
     
 }
 .menu__link:hover{
-     background-color: #8755b7;
+     background-color: #ca73d2;
 }
 .menu__link--select{
-    background-color: #aa7dd4;
+    background-color: #320b4d;
     
 }
 .mostrar{
     height: 210px;
 }
-
-
 /*----------------Estilos Banner------------------*/
 
 .banner{
+    margin-top:-52px;
     position: relative;
 }
+.banner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+    top: 0;
+}
 .banner__img{
-    width: 300%;
-    height: 450px;
-    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    object-fit: cover
 }
 .banner__content {
-    width: auto;
+    width: 70%;
+    color: rgb(233, 229, 237);
     text-align:center;
     position: absolute;
-    top: 1;
+    z-index: 1500;
+    top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     font-size: 1.5em;
     font-weight:bold;
+    
 }
 
 /*----------------Estilos Principales------------------*/
 .group--color .container{
-	background-color: #aa7dd4;
+	background-color: #dfc7a1c8;
 	padding: 10px;
 	text-align: center;
-    color: #000000;
-    font-weight: bold;
-   
 	
 }
 .main__title{
@@ -185,16 +257,27 @@ h1,h2,h3,h4,h5{
 }
 .column__title{
 	font-size: 1.3em;
-	font-weight: bold;
-	color: #e6d4e1;
+	color: #040009;
 	
 }
 .main__about_description .column:nth-child(2){
-	padding: 10px;
+	padding: 2px;
 }
+
+.group__title{
+	font-family:'Sacramento',cursive;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.8em;
+	margin: 30px;
+}
+
+
+
+
 /*----------------Estilos Principales------------------*/
 .main-footer{
-	background: #aa7dd4;
+	background: #c4b591;
 	color: #fff;
 	padding: 10px;
 	padding-top: 20px;
@@ -209,7 +292,7 @@ h1,h2,h3,h4,h5{
 }
 
 .main-footer [class*="icon-"] {
-	color: #eae4e4;
+	color: #fff;
 	text-decoration: none;
 	
 	
@@ -223,146 +306,124 @@ h1,h2,h3,h4,h5{
 /*----------------Estilos Responsivos------------------*/
 
 @media screen and (min-width:480px){
-.logo{
-	color: #ffffff;
-	
-}
-.main-header__contactInfo{
-	text-align:right;
-}
-
-.main-header__contactInfo__phone{
-	background: none;
-}
-.main-header__contactInfo__addres{
-	color: #fff;
-}
-.main_nav{
-	background:rgba(0,0,0,0.85);
-}
-
-.column--50{
-	width: 49%;
-}
-.column--50--25{
-	width: 49%;
-}
-.column--33{
-	width: 32%;
-}
-}
-
-.main-footer .container--flex{
-	align-items: flex-start;
-}
+	.logo{
+		color: #ffffff;
 		
+	}
+	.main-header__contactInfo{
+		text-align:right;
+	}
+	.banner{
+		margin-top: -145px;
+		z-index: -1000;
+	}
+	.main-header__contactInfo__phone{
+		background: none;
+	}
+	.main-header__contactInfo__addres{
+		color: #fff;
+	}
+	.main_nav{
+		background:rgba(0,0,0,0.85);
+	}
+	.banner__content{
+		font-size:1.5em;
+	}
+	.column--50{
+		width: 49%;
+	}
+	.column--50--25{
+		width: 49%;
+	}
+	.column--33{
+		width: 32%;
+	}
+}
 @media screen and (min-width:1024px){
 .container{
-	width: 1000px
-}
-.logo{
-	padding-top: 20px;
-	font-size: 2em;
-
+		width: 1000px
+	}
+	.logo{
+		padding-top: 20px;
+		font-size: 2em;
 	
-}
+		
+	}
+		
+	.main-header__contactInfo__phone,
+	.main-header__contactInfo__addres{
+		font-size: 1.18em;
+		padding-right: 0px;
+		
+		
+		
+	}
 	
-.main-header__contactInfo__phone,
-.main-header__contactInfo__addres{
-	font-size: 1.18em;
-	padding-right: 0px;
-	
-}
-
-.main_nav{
-
-	padding: 0px;
-}
-
-.icon-menu{
-	display: none;
-}
-
-.menu{
-	position: static;
-	display: flex;
-	height: 60px;
-	width: auto;
-}
-
-.menu__link{
-
-	padding: 18px;
-  
-}
-.group--color .container{
-	margin-top: 30px;
-	margin-bottom: 30px;
-	padding: 20px
-
-}
-.main__title{
-	font-size: 2.5em;
-}
-.main__about_description .column--50:nth-child(2) .column__txt
-{
-	line-height: 55px;
-	text-align: justify;
-    font-weight: bold;
-	
-}
-.group__title{
-	font-size: 2.5em;
-}
-.column--50--25{
-	width: 24.5%;
-}
-
-.galeria{
+	.main_nav{
     
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 40px;
-}
+    	padding: 0px;
+	}
+	
+	.banner__content{
+		font-size:2.5em;
+	}
+	
+	.icon-menu{
+		display: none;
+	}
+	
+	.menu{
+		position: static;
+		display: flex;
+		height: 60px;
+		width: auto;
+	}
+	
+	.menu__link{
+   
+    	padding: 18px;
+      
+	}
+	.group--color .container{
+		margin-top: 30px;
+		margin-bottom: 30px;
+		padding: 20px;
+		background-color: #e1c498;
+		color: #e3dfe7;
+	
+	}
+	.main__title{
+		font-size: 2.5em;
+		
+	};
+	}
+	.main__about_description .column--50:nth-child(2) .column__txt
+	{
+		line-height: 30px;
+		text-align: justify;
+		font-weight: bold;
+		
+		
+	}
+	.group__title{
+		font-size: 2.5em;
+	}
+	.column--50--25{
+		width: 24.5%;
+	}
+	.pokemon-psiquico__tittle{
+	
+		font-size: 1.9em;
+		
+	}
+	.pokemon-psiquico__price{
+	font-size: 2.2em;
+	
+	}
 
-.galeria1{
-    display: flex;
-    margin: 0px 10px;  
-}
 
-.galeria1 .card{
-    width: 100%;
-    margin: 30px;  
-}
 
-.card-img-top{
-    width: 100%;
-    height: 250px;   
-}
 
-.menu li a{
-    color:white;
-}
 
-@media screen and (max-width: 500px){
-.galeria1{
-    display: flex;
-    flex-direction: column;
-}
-}
-.bg-lila {
-    background-color: #aa7dd4; /* Color lila */
-}
-
-.bg-rosa {
-	background-color: #ba8db3; /* rosa pastel */
-}
-
-.bg-naranja {
-	background-color: #d2ac8c; /* Naranja pastel */
-}
-}
 
 
